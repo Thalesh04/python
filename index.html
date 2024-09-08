@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encrypt Message</title>
+</head>
+
+<body>
+    <h1>Enter your message to encrypt:</h1>
+    <form action="/encrypt" method="POST">
+        <label for="message">Message:</label>
+        <input type="text" id="message" name="message" required><br><br>
+
+        <label for="key">Key (0-25):</label>
+        <input type="number" id="key" name="key" min="0" max="25" required><br><br>
+
+        <label for="show_decrypted">Show decrypted message:</label>
+        <input type="checkbox" id="show_decrypted" name="show_decrypted" value="yes"><br><br>
+
+        <button type="submit">Encrypt</button>
+    </form>
+</body>
+
+</html>

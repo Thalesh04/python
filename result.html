@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+</head>
+
+<body>
+    <h1>Encryption Result</h1>
+    <p><strong>Encrypted message:</strong> {{ encrypted_message }}</p>
+
+    {% if decrypted_message %}
+    <p><strong>Decrypted message:</strong> {{ decrypted_message }}</p>
+    {% endif %}
+
+    <a href="/">Go back</a>
+</body>
+
+</html>
